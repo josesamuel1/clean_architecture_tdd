@@ -4,27 +4,29 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.5.4
+  sdk: '>=3.4.4 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
 
-  flutter_bloc: ^8.1.6 # State management
-  get_it: ^8.0.2 # Service locator
-  equatable: ^2.0.5 # Value equality
-  dartz: ^0.10.1 # Functional programming thingies
-  internet_connection_checker: ^1.0.0+1 # Remote API
-  http: ^1.2.2 # Remote API
-  shared_preferences: ^2.3.3 # Local cache
-  flutter_lints: ^5.0.0
-  mockito: ^5.4.4
-  build_runner: ^2.0.0
-  test: ^1.25.7
+  cupertino_icons: ^1.0.6
+  get_it: ^8.0.2
+  flutter_bloc: ^8.1.6
+  equatable: ^2.0.5
+  dartz: ^0.10.1
+  connectivity: ^3.0.6
+  http: ^1.2.2
+  shared_preferences: ^2.3.2
+  build_runner: 2.4.11
+  internet_connection_checker: ^1.0.0+1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+  flutter_lints: ^3.0.0
+  mockito: ^5.4.4
 
 flutter:
   uses-material-design: true
