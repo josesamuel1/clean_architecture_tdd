@@ -1,3 +1,13 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.0'  // Or latest version
+    }
+}
+
 plugins {
     id "com.android.application"
     id "kotlin-android"
@@ -5,10 +15,12 @@ plugins {
     id "dev.flutter.flutter-gradle-plugin"
 }
 
+
+
 android {
     namespace = "com.teste.josesamuel.clean_architecture_tdd"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = '23.1.7779620'
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -26,8 +38,8 @@ android {
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
-        versionCode = flutter.versionCode
-        versionName = flutter.versionName
+        versionCode = 1
+        versionName = "1.0.0"
     }
 
     buildTypes {
