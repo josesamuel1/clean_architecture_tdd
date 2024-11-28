@@ -5,6 +5,8 @@ import 'features/number_trivia/presentation/pages/pagina_teste.dart';
 import 'injection_container.dart' as injection;
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
   await injection.init();
   runApp(MyApp());
 }
