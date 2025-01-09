@@ -20,8 +20,8 @@ Future<void> init() async {
   // Cubit
   sl.registerFactory(
     () => NumberTriviaCubit(
-      concrete: sl.call(), // *mesma coisa*
-      random: sl(), // *mesma coisa*
+      concrete: sl.call(), // *mesma coisa esses dois \/*
+      random: sl(), // *mesma coisa esses dois /\*
       inputConverter: sl(),
     ),
   );
@@ -54,6 +54,6 @@ Future<void> init() async {
   // External
   final sharedPreferences = await SharedPreferences.getInstance();
   sl.registerLazySingleton(() => sharedPreferences);
-  sl.registerLazySingleton(() => http.Client);
+  sl.registerLazySingleton(() => http.Client());
   sl.registerLazySingleton(() => InternetConnectionChecker());
 }
